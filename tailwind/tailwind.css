@@ -4,15 +4,84 @@
 
 @layer base {
   body {
-    @apply bg-gray-100;
+    @apply bg-offwhite;
   }
 
   h1 {
   }
 
-  a {
+  h2 {
+    @apply mb-10 text-4xl font-bold;
   }
 
-  .regular-h2 {
+  h3 {
+    @apply mb-4 text-xl font-bold;
+  }
+
+  a {
+    @apply underline text-link hover:brightness-50 active:brightness-50;
+  }
+
+  .order-btn {
+    @apply px-6 py-2 text-lg font-bold transition duration-200 ease-in-out rounded-full bg-pink hover:brightness-95;
+  }
+
+  .feature-icon {
+    @apply flex items-center justify-center inline-block w-12 h-12 p-2 mb-6 rounded-full bg-pink;
+  }
+  .feature-item ion-icon {
+    @apply text-2xl;
+  }
+  .feature-item p {
+    @apply text-sm text-gray-700;
+  }
+
+  .item-wrap {
+    @apply p-6 bg-white rounded-3xl;
+  }
+
+  .order-item {
+    @apply flex flex-col items-center text-center;
+  }
+  .order-item p:nth-child(1) {
+    @apply flex items-center justify-center mb-6 text-2xl font-bold w-14 h-14 rounded-3xl bg-pink;
+  }
+  .order-item p:nth-child(3) {
+    @apply text-sm text-gray-700;
+  }
+
+  .order-form div {
+    @apply flex flex-col;
+  }
+
+  .order-form label {
+    @apply mb-1 text-sm text-gray-700 uppercase;
+  }
+
+  .order-form input,
+  .order-form textarea {
+    @apply px-4 py-2 bg-white border-2 border-gray-200 rounded-lg;
+  }
+
+  .service-item p:nth-child(1) {
+    @apply mb-2 text-lg font-bold uppercase;
+  }
+  .service-item p:nth-child(2) {
+    @apply text-sm text-gray-700;
+  }
+
+  .footer-item {
+    @apply text-sm;
+  }
+  .footer-item p:nth-child(1) {
+    @apply mb-2 font-bold uppercase;
+  }
+
+  .contact-icons {
+    @apply flex flex-row gap-4 mb-10;
+  }
+
+  .contact-icons ion-icon {
+    @apply text-4xl text-gray-700;
   }
 }

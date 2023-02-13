@@ -35,133 +35,221 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="./img/logo.png" sizes="96x96" />
   </head>
-  <body class="text-gray-900 bg-gray-100">
+  <body>
     <header>
-      <section>
-        <button>Bestill nå</button>
+      <section class="container mx-auto mt-20 mb-2">
+        <button class="order-btn">Bestill nå</button>
       </section>
 
-      <section>
-        <div>
-          <p>Lager eventer som tiltrekker, gir ekstra boost og oppmerksomhet rundt din virksomhet.</p>
-          <p>Eventplanlegger i Bærum</p>
-          <svg><title>Bærum events</title></svg>
-        </div>
+      <section
+        class="container flex flex-col p-8 mx-auto mb-20 bg-pink rounded-3xl"
+      >
+        <p class="pr-40 mb-6 text-5xl">
+          Lager eventer som tiltrekker, gir ekstra boost og oppmerksomhet rundt
+          din virksomhet.
+        </p>
+        <p class="text-lg uppercase">Eventplanlegger i Bærum</p>
+        <!--<svg><title>Bærum events</title></svg>-->
       </section>
     </header>
 
     <main>
-      <section aria-label="Bestill og få">
-        <h2>Bestill og få</h2>
-        <div class="grid">
-          <div>Ballonger</div>
-          <div class="grid">
-            <article>
-              <h3>Din boost - eventideer til din virksomhet</h3>
-              <p>Vi finner det som tiltrekker, det som gir ekstra boost og oppmerksomhet rundt din virksomhet. Har du selv en idé - bygger vi videre på den. Kjør på!</p>
-            </article>
-            <article>
-              <h3>Planleggingsverktøy 1.0</h3>
-              <p>Et godt event krever planlegging. Det trenger ikke være mye, men litt må til. Derfor jobber vi med en planlegger og en huskeliste. Har du allerede notater og planlegger, ta det med.</p>
-            </article>
-            <article>
-              <h3>Støtte ved gjennomføring</h3>
-              <p>Bærum events fungerer både som heiagjeng, deltaker eller støtte til oppsett ved behov. Se lenger ned på siden for hva som kan leveres til selve eventet.</p>
-            </article>
-            <article>
-              <h3>Evaluering</h3>
-              <p>Når eventet er over er det lurt å lage en liten evaluering over hva som var helt fantastisk, hva vi kan bli bedre på og hva som er greit å huske på til neste gang. Og vi er i boks!</p>
-            </article>
+      <section aria-label="Bestill og få" class="container mx-auto mb-20">
+        <div class="grid gap-4 md:grid-cols-3">
+          <div>
+            <img
+              class="rounded-3xl"
+              src="https://placehold.co/400x800"
+              alt="Ballonger"
+            />
+          </div>
+          <div class="md:col-span-2">
+            <h2>Bestill og få</h2>
+            <div class="grid gap-4 md:grid-cols-2">
+              <article class="item-wrap feature-item">
+                <div class="feature-icon">
+                  <ion-icon name="bulb-outline"></ion-icon>
+                </div>
+                <h3>Din boost - eventideer til din virksomhet</h3>
+                <p>
+                  Vi finner det som tiltrekker, det som gir ekstra boost og
+                  oppmerksomhet rundt din virksomhet. Har du selv en idé -
+                  bygger vi videre på den. Kjør på!
+                </p>
+              </article>
+              <article class="item-wrap feature-item">
+                <div class="feature-icon">
+                  <ion-icon name="list-circle-outline"></ion-icon>
+                </div>
+                <h3>Planleggings&shy;verktøy 1.0</h3>
+                <p>
+                  Et godt event krever planlegging. Det trenger ikke være mye,
+                  men litt må til. Derfor jobber vi med en planlegger og en
+                  huskeliste. Har du allerede notater og planlegger, ta det med.
+                </p>
+              </article>
+              <article class="item-wrap feature-item">
+                <div class="feature-icon">
+                  <ion-icon name="balloon-outline"></ion-icon>
+                </div>
+                <h3>Støtte ved gjennomføring</h3>
+                <p>
+                  Bærum events fungerer både som heiagjeng, deltaker eller
+                  støtte til oppsett ved behov. Se lenger ned på siden for hva
+                  som kan leveres til selve eventet.
+                </p>
+              </article>
+              <article class="item-wrap feature-item">
+                <div class="feature-icon">
+                  <ion-icon name="chatbubbles-outline"></ion-icon>
+                </div>
+                <h3>Evaluering</h3>
+                <p>
+                  Når eventet er over er det lurt å lage en liten evaluering
+                  over hva som var helt fantastisk, hva vi kan bli bedre på og
+                  hva som er greit å huske på til neste gang. Og vi er i boks!
+                </p>
+              </article>
+            </div>
           </div>
         </div>
       </section>
 
-      <section aria-label="Bestill nå">
-        <h2>Bestill nå</h2>
-        <ol>
-          <li>
+      <section aria-label="Bestill nå" class="container mx-auto mb-20">
+        <h2 class="text-center">Bestill nå</h2>
+        <ol class="grid gap-4 md:grid-cols-3">
+          <li class="item-wrap order-item">
             <p>1</p>
             <h3>Fyll ut skjema</h3>
-            <p>Fyll ut ditt navn, virksomhetens navn, e-postadresse og hva du ønsker å bestillle.</p>
+            <p>
+              Fyll ut ditt navn, virksomhetens navn, e-postadresse og hva du
+              ønsker å bestillle.
+            </p>
           </li>
-          <li>
+          <li class="item-wrap order-item">
             <p>2</p>
-            <h3>Video/telefonmøte</h3>
-            <p>30 minutter uforpliktende møte på video/telefon om eventideen eller tjenesten.</p>
+            <h3>Video/&shy;telefonmøte</h3>
+            <p>
+              30 minutter uforpliktende møte på video/&shy;telefon om eventideen
+              eller tjenesten.
+            </p>
           </li>
-          <li>
+          <li class="item-wrap order-item">
             <p>3</p>
-            <h3>Oppdragsavtale</h3>
-            <p>Du får tilsendt oppdragsavtale og vi er i gang!</p>
+            <h3>Oppdrags&shy;avtale</h3>
+            <p>Du får tilsendt oppdrags&shy;avtale og vi er i gang!</p>
           </li>
         </ol>
       </section>
 
-      <section aria-label="Bestill her">
-        <h2>Bestill her</h2>
-        <div>
-          <form>
-            <input name="navn" />
-            <input name="virksomhet" />
-            <input name="epost" />
-            <input name="telefonnummer" />
-            <textarea name="kommentar"></textarea>
-            <button>Bestill</button>
+      <section aria-label="Bestill her" class="flex flex-col items-center">
+        <h2
+          class="inline-block px-6 py-3 mb-0 text-2xl text-center translate-y-1/2 rounded-full place-content-center bg-pink"
+        >
+          Bestill her
+        </h2>
+        <div
+          class="container px-20 py-10 mx-auto mb-20 bg-white md:w-4/5 rounded-3xl"
+        >
+          <form class="grid gap-4 mt-10 mb-10 md:grid-cols-2 order-form">
+            <div>
+              <label for="navn">Navn</label>
+              <input id="navn" class="" name="navn" />
+            </div>
+            <div>
+              <label for="virksomhet">Virksomhet</label>
+              <input id="virksomhet" class="" name="virksomhet" />
+            </div>
+            <div>
+              <label for="epost">E-post</label>
+              <input id="epost" class="" name="epost" />
+            </div>
+            <div>
+              <label for="telefonnummer">Telefonnummer</label>
+              <input id="telefonnummer" class="" name="telefonnummer" />
+            </div>
+            <div class="md:col-span-2">
+              <label for="kommentar">Hva ønsker du å bestille?</label>
+              <textarea id="kommentar" class="" name="kommentar"></textarea>
+            </div>
+            <button class="order-btn">Bestill</button>
           </form>
         </div>
       </section>
 
-      <section aria-label="Andre tjenester">
-        <h2>Andre tjenester</h2>
-        <ul class="grid">
-          <li>
-            <p>Boosterpakke</p>
+      <section aria-label="Andre tjenester" class="container mx-auto mb-20">
+        <h2 class="text-center">Andre tjenester</h2>
+        <ul class="grid gap-4 md:grid-cols-2">
+          <li class="item-wrap service-item">
+            <p>Booster&shy;pakke</p>
             <p>40 tilpassede ideer til ditt neste event.</p>
           </li>
-          <li>
-            <p>Ballongdekor</p>
+          <li class="item-wrap service-item">
+            <p>Ballong&shy;dekor</p>
             <p>Ballonggirlander og ballongbue.</p>
           </li>
-          <li>
-            <p>Planleggingsverktøy 2.0</p>
+          <li class="item-wrap service-item">
+            <p>Planleggings&shy;verktøy 2.0</p>
             <p>Planlegger, sjekkliste og tips til nyttige verktøy.</p>
           </li>
-          <li>
+          <li class="item-wrap service-item">
             <p>Oppsett og styling på event</p>
             <p>Oppsett og styling 1.0 Ta kontakt for mer</p>
           </li>
-          <li>
-            <p>Instagramboost</p>
+          <li class="item-wrap service-item">
+            <p>Instagram&shy;boost</p>
             <p>Booster din intagram!</p>
           </li>
-          <li>
+          <li class="item-wrap service-item">
             <p>Koordinering</p>
             <p>Enten før, underveis eller etter eventet.</p>
           </li>
         </ul>
       </section>
 
-      <section aria-label="Kontakt meg">
-        <div class="grid">
-          <div>
+      <section aria-label="Kontakt meg" class="container mx-auto mb-20">
+        <div class="grid md:grid-cols-3">
+          <div class="flex flex-col">
             <h2>Kontakt meg</h2>
-            <p>boost@baerumevents.no</p>
-            <svg><title>Instgram</title></svg>
-            <svg><title>Facebook</title></svg>
-            <svg><title>LinkedIn</title></svg>
-            <button>Bestill nå</button>
+            <p class="mb-10">
+              <a href="mailot:boost@baerumevents.no">boost@baerumevents.no</a>
+            </p>
+            <div class="contact-icons">
+              <ion-icon name="logo-instagram"></ion-icon>
+              <ion-icon name="logo-facebook"></ion-icon>
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+            <div>
+              <button class="order-btn">Bestill nå</button>
+            </div>
           </div>
-          <div>
-            <p>"Jeg ønsker å legge til rette for at flere lokale virksomheter løftes opp og frem"</p>
-            <p>Hei! Jeg er heter Anna og står bak Bærum events. Jeg opprettet instagramprofilen Bærum events fordi jeg ønsket å motivere og heie frem lokale virksomheter. Har erfaring fra revyoppsetninger, konferanser, og sosiale aktiviteter internt i bedrift. Nå er det lokale virksomheter som står for tur.</p>
-            <p>Som eventplanlegger hjelper deg og din virksomhet med å planlegge det lille ekstra eller store ekstra rundt en lansering, åpning eller feiring. Vi finner det som gjør deg til den nye møteplassen, det som tiltrekker og det som booster din virksomhet! </p>
-            <p>Ta kontakt for hjelp til å sette opp ditt neste event.</p>
-            <div class="flex">
-              <img src="#" alt="Anna" />
-              <div>
+          <div class="md:col-span-2">
+            <p class="mb-6 text-2xl md:w-4/5">
+              "Jeg ønsker å legge til rette for at flere lokale virksomheter
+              løftes opp og frem"
+            </p>
+            <p class="mb-6 text-sm text-gray-700">
+              Hei! Jeg er heter Anna og står bak Bærum events. Jeg opprettet
+              instagramprofilen Bærum events fordi jeg ønsket å motivere og heie
+              frem lokale virksomheter. Har erfaring fra revyoppsetninger,
+              konferanser, og sosiale aktiviteter internt i bedrift. Nå er det
+              lokale virksomheter som står for tur.
+            </p>
+            <p class="mb-6 text-sm text-gray-700">
+              Som eventplanlegger hjelper deg og din virksomhet med å planlegge
+              det lille ekstra eller store ekstra rundt en lansering, åpning
+              eller feiring. Vi finner det som gjør deg til den nye møteplassen,
+              det som tiltrekker og det som booster din virksomhet!
+            </p>
+            <p class="mb-6 text-sm text-gray-700">
+              Ta kontakt for hjelp til å sette opp ditt neste event.
+            </p>
+            <div class="flex items-center gap-4">
+              <img src="https://placehold.co/75x75" alt="Anna" />
+              <div class="text-sm">
                 <p>Anna P. Klevsand</p>
-                <p>Eventplanlegger</p>
-                <p>Bærum events</p>
+                <p class="uppercase">Eventplanlegger</p>
+                <p class="uppercase">Bærum events</p>
               </div>
             </div>
           </div>
@@ -170,29 +258,46 @@
     </main>
 
     <footer>
-      <div class="grid">
-        <div>
+      <section
+        class="container grid grid-cols-2 gap-4 px-20 py-10 mx-auto mb-20 bg-white md:grid-cols-5 rounded-3xl"
+      >
+        <div class="footer-item">
           <p>Personvern</p>
-          <p>Ingen informasjonskapsler. Innsendte opplysninger i skjema blir lagret hos Formkeep.</p>
+          <p>
+            Ingen informasjons&shy;kapsler. Innsendte opplysninger i skjema blir
+            lagret hos Formkeep.
+          </p>
         </div>
-        <div>
+        <div class="footer-item">
           <p>Org.nummer</p>
           <p>930 730 823</p>
         </div>
-        <div>
-          <p>Kontaktinformasjon</p>
-          <p>boost@baerumevents.no</p>
+        <div class="footer-item">
+          <p>Kontakt&shy;informasjon</p>
+          <p>
+            <a href="mailto:boost@baerumevents.no">boost@baerumevents.no</a>
+          </p>
         </div>
-        <div>
+        <div class="footer-item">
           <p>Timepris</p>
           <p>990</p>
           <p>Ved lengre oppdrag setter vi opp en prispakke.</p>
         </div>
-        <div>
+        <div class="footer-item">
           <p>Fakturering</p>
           <p>Faktura sendes fra Fiken. Fakturering skjer hver måned.</p>
         </div>
-      </div>
+      </section>
     </footer>
+
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
