@@ -813,6 +813,10 @@ a:active {
   }
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -866,8 +870,16 @@ a:active {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-20 {
   height: 5rem;
+}
+
+.h-0 {
+  height: 0px;
 }
 
 .w-20 {
