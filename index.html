@@ -45,7 +45,7 @@
     <meta property="twitter:image:alt" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="./img/logo.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="./img/favicon.png" sizes="96x96" />
   </head>
   <body>
     <header>
@@ -54,9 +54,9 @@
       </section>
 
       <section class="container max-w-6xl mx-auto mb-20">
-        <div class="flex flex-col p-8 lg:w-4/5 bg-pink rounded-3xl">
+        <div class="grid gap-8 p-8 lg:w-4/5 bg-pink rounded-3xl">
           <p
-            class="mb-6 text-3xl leading-tight sm:leading-tight md:leading-tight sm:pr-40 sm:text-4xl md:text-5xl font-open-sans"
+            class="text-3xl leading-tight sm:leading-tight md:leading-tight sm:pr-40 sm:text-4xl md:text-5xl font-open-sans"
           >
             Lager eventer som tiltrekker, gir ekstra boost og oppmerk&shy;somhet
             rundt din virk&shy;somhet.
@@ -66,7 +66,11 @@
           >
             Eventplanlegger i Bærum
           </p>
-          <!--<svg><title>Bærum events</title></svg>-->
+          <img
+            src="./img/logo.svg"
+            class="h-20 mr-3 sm:h-22 justify-self-end"
+            alt="Bærum events Logo"
+          />
         </div>
       </section>
     </header>
@@ -80,15 +84,23 @@
           <div>
             <picture>
               <source
+                media="(max-width: 767px)"
                 srcset="
-                  https://placehold.co/400x800     1x,
-                  https://placehold.co/400x800.jpg 2x
+                  ./img/pexels-ivan-samkov-5947548-1x.jpg 1x,
+                  ./img/pexels-ivan-samkov-5947548-2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./img/pexels-ivan-samkov-5947548-desktop-1x.jpg 1x,
+                  ./img/pexels-ivan-samkov-5947548-desktop-2x.jpg 2x
                 "
               />
               <img
                 class="w-full rounded-3xl"
-                src="https://placehold.co/400x800"
-                alt="Ballonger"
+                src="./img/pexels-ivan-samkov-5947548-1x.jpg"
+                alt="Ballonger av Ivan Samkov, Pexels"
                 loading="lazy"
               />
             </picture>
@@ -188,13 +200,19 @@
         <div
           class="container max-w-6xl px-4 py-20 pb-10 mx-auto mb-20 bg-white sm:px-10 md:px-20 md:w-4/5 rounded-3xl"
         >
-          <form class="grid gap-4 mt-10 mb-10 md:grid-cols-2 order-form">
+          <form
+            class="grid gap-4 mt-10 mb-10 md:grid-cols-2 order-form"
+            action="https://formkeep.com/f/4b0e1e2af247"
+            accept-charset="UTF-8"
+            enctype="multipart/form-data"
+            method="POST"
+          >
             <div class="order-input">
-              <label for="navn">Navn</label>
+              <label for="navn">Navn *</label>
               <input id="navn" class="w-4/6 md:w-full" name="navn" required />
             </div>
             <div class="order-input">
-              <label for="virksomhet">Virksomhet</label>
+              <label for="virksomhet">Virksomhet *</label>
               <input
                 id="virksomhet"
                 class="w-5/6 md:w-full"
@@ -203,7 +221,7 @@
               />
             </div>
             <div class="order-input">
-              <label for="epost">E-post</label>
+              <label for="epost">E-post *</label>
               <input
                 type="email"
                 id="epost"
@@ -222,7 +240,7 @@
               />
             </div>
             <div class="order-input md:col-span-2">
-              <label for="kommentar">Hva ønsker du å bestille?</label>
+              <label for="kommentar">Hva ønsker du å bestille? *</label>
               <textarea
                 id="kommentar"
                 class=""
