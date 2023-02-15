@@ -64,7 +64,10 @@
     <header>
       <h1 class="invisible h-0">Bærum events</h1>
       <section class="container max-w-6xl mx-auto mt-20 mb-2">
-        <a href="#bestill-her" class="order-btn">Bestill nå</a>
+        <a href="#bestill-her" class="order-btn" onclick="swetrix.track({
+          ev: 'bestill-na-button',
+          unique: false,
+        })">Bestill nå</a>
       </section>
 
       <section class="container max-w-6xl mx-auto mb-20">
@@ -213,6 +216,10 @@
             accept-charset="UTF-8"
             enctype="multipart/form-data"
             method="POST"
+            onsubmit="swetrix.track({
+              ev: 'form-submit',
+              unique: false,
+            })"
           >
             <div class="order-input">
               <label for="navn">Navn *</label>
@@ -303,17 +310,26 @@
           <div class="flex flex-col">
             <h2>Kontakt meg</h2>
             <p class="mb-10">
-              <a href="mailot:boost@baerumevents.no">boost@baerumevents.no</a>
+              <a href="mailto:boost@baerumevents.no" onclick="swetrix.track({
+                ev: 'email-click',
+                unique: false,
+              })">boost@baerumevents.no</a>
             </p>
             <div class="contact-icons">
-              <a href="https://instagram.com/baerumevents"
+              <a href="https://instagram.com/baerumevents" onclick="swetrix.track({
+                ev: 'instagram',
+                unique: false,
+              })"
                 ><ion-icon name="logo-instagram"></ion-icon
               ></a>
               <!--<a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
               <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>-->
             </div>
             <div>
-              <a href="#bestill-her" class="order-btn">Bestill nå</a>
+              <a href="#bestill-her" class="order-btn" onclick="swetrix.track({
+                ev: 'bestill-na-button',
+                unique: false,
+              })">Bestill nå</a>
             </div>
           </div>
           <div class="md:col-span-2">
@@ -382,7 +398,10 @@
         <div class="footer-item">
           <p>Kontakt&shy;informasjon</p>
           <p>
-            <a href="mailto:boost@baerumevents.no"
+            <a href="mailto:boost@baerumevents.no" onclick="swetrix.track({
+              ev: 'email-click',
+              unique: false,
+            })"
               >boost@baerum&shy;events.no</a
             >
           </p>
@@ -401,7 +420,10 @@
         Nettside levert av
         <a
           class="text-gray-900 no-underline hover:underline"
-          href="https://www.snobjorn.no/"
+          href="https://www.snobjorn.no/" onclick="swetrix.track({
+            ev: 'asbjorn-ness-web',
+            unique: false,
+          })"
           >Asbjørn Ness Web</a
         >
       </section>
