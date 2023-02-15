@@ -64,10 +64,7 @@
     <header>
       <h1 class="invisible h-0">Bærum events</h1>
       <section class="container max-w-6xl mx-auto mt-20 mb-2">
-        <a href="#bestill-her" class="order-btn" onclick="swetrix.track({
-          ev: 'bestillNaButton',
-          unique: false,
-        })">Bestill nå</a>
+        <a href="#bestill-her" class="order-btn" onclick="swetrix.track({ev: 'gaTilBestilling',unique: false,})">Bestill nå</a>
       </section>
 
       <section class="container max-w-6xl mx-auto mb-20">
@@ -216,10 +213,7 @@
             accept-charset="UTF-8"
             enctype="multipart/form-data"
             method="POST"
-            onsubmit="swetrix.track({
-              ev: 'formSubmit',
-              unique: false,
-            })"
+            onsubmit="swetrix.track({ev: 'skjemaBestilling',unique: false,})"
           >
             <div class="order-input">
               <label for="navn">Navn *</label>
@@ -310,26 +304,16 @@
           <div class="flex flex-col">
             <h2>Kontakt meg</h2>
             <p class="mb-10">
-              <a href="mailto:boost@baerumevents.no" onclick="swetrix.track({
-                ev: 'emailClick',
-                unique: false,
-              })">boost@baerumevents.no</a>
+              <a href="mailto:boost@baerumevents.no" onclick="swetrix.track({ ev: 'boostBaerumeventsNo',unique: false, })">boost@baerumevents.no</a>
             </p>
             <div class="contact-icons">
-              <a href="https://instagram.com/baerumevents" onclick="swetrix.track({
-                ev: 'instagram',
-                unique: false,
-              })"
-                ><ion-icon name="logo-instagram"></ion-icon
+              <a href="https://instagram.com/baerumevents" onclick="swetrix.track({ ev: 'instagram',unique: false, })"><ion-icon name="logo-instagram"></ion-icon
               ></a>
-              <!--<a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-              <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>-->
+              <a href="https://www.facebook.com/baerumevents" onclick="swetrix.track({ ev: 'facebook',unique: false, })"><ion-icon name="logo-facebook"></ion-icon></a>
+              <!--<a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>-->
             </div>
             <div>
-              <a href="#bestill-her" class="order-btn" onclick="swetrix.track({
-                ev: 'bestillNaButton',
-                unique: false,
-              })">Bestill nå</a>
+              <a href="#bestill-her" class="order-btn" onclick="swetrix.track({ ev: 'gaTilBestilling',unique: false, })">Bestill nå</a>
             </div>
           </div>
           <div class="md:col-span-2">
@@ -398,11 +382,7 @@
         <div class="footer-item">
           <p>Kontakt&shy;informasjon</p>
           <p>
-            <a href="mailto:boost@baerumevents.no" onclick="swetrix.track({
-              ev: 'emailClick',
-              unique: false,
-            })"
-              >boost@baerum&shy;events.no</a
+            <a href="mailto:boost@baerumevents.no" onclick="swetrix.track({ ev: 'boostBaerumeventsNo', unique: false, })">boost@baerum&shy;events.no</a
             >
           </p>
         </div>
@@ -420,11 +400,7 @@
         Nettside levert av
         <a
           class="text-gray-900 no-underline hover:underline"
-          href="https://www.snobjorn.no/" onclick="swetrix.track({
-            ev: 'asbjornNessWeb',
-            unique: false,
-          })"
-          >Asbjørn Ness Web</a
+          href="https://www.snobjorn.no/" onclick="swetrix.track({ ev: 'asbjornNessWeb', unique: false, })">Asbjørn Ness Web</a
         >
       </section>
     </footer>
