@@ -3,19 +3,22 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply scroll-smooth;
+  }
   body {
-    @apply bg-offwhite;
+    @apply px-4 text-gray-900 bg-offwhite;
   }
 
   h1 {
   }
 
   h2 {
-    @apply mb-10 text-4xl font-bold;
+    @apply mb-10 text-2xl font-bold sm:text-3xl md:text-4xl;
   }
 
   h3 {
-    @apply mb-4 text-xl font-bold;
+    @apply mb-4 text-lg font-bold md:text-xl;
   }
 
   a {
@@ -23,7 +26,7 @@
   }
 
   .order-btn {
-    @apply px-6 py-2 text-lg font-bold transition duration-200 ease-in-out rounded-full bg-pink hover:brightness-95;
+    @apply inline-block px-6 py-2 text-lg font-bold text-gray-900 no-underline transition duration-200 ease-in-out rounded-full bg-pink hover:brightness-95;
   }
 
   .feature-icon {
@@ -50,7 +53,7 @@
     @apply text-sm text-gray-700;
   }
 
-  .order-form div {
+  .order-form .order-input {
     @apply flex flex-col;
   }
 
@@ -60,7 +63,7 @@
 
   .order-form input,
   .order-form textarea {
-    @apply px-4 py-2 bg-white border-2 border-gray-200 rounded-lg;
+    @apply px-4 py-2 bg-white border-2 border-gray-200 rounded-lg focus:outline-none focus:border-2 focus:border-pink active:border-2 active:border-pink;
   }
 
   .service-item p:nth-child(1) {
@@ -82,6 +85,6 @@
   }
 
   .contact-icons ion-icon {
-    @apply text-4xl text-gray-700;
+    @apply text-4xl text-gray-700 hover:text-gray-900;
   }
 }
