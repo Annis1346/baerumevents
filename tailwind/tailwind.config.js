@@ -13,5 +13,13 @@ module.exports = {
       offwhite: "#f1f0f0",
       link: "#80060A",
     },
+    extend: {
+      fontFamily: {
+        inter: ['"Inter"', "sans-serif"],
+        "open-sans": ['"Open Sans"', "sans-serif"],
+        "josefin-sans": ['"Josefin Sans"', "sans-serif"],
+        "ibm-plex-sans": ['"IBM Plex Sans"', "sans-serif"],
+      },
+    },
   },
 };
